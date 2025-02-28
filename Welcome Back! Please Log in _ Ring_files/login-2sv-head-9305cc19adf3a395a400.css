@@ -1,0 +1,250 @@
+  .subtitle.login-2sv {
+    margin-bottom: .5rem;
+  }
+
+  .otp-receiver {
+    color: var(--contentBase);
+    font-family: "Equip-Medium";
+    font-size: var(--BODY_NORMAL_BOLD_FONT_SIZE);
+    font-weight: var(--BODY_NORMAL_BOLD_FONT_WEIGHT);
+    line-height: var(--BODY_NORMAL_BOLD_LINE_HEIGHT);
+    margin: 0;
+  }
+
+  .otp-receiver img {
+    vertical-align: middle;
+  }
+
+  .totp-subtitle,
+  .totp-caption {
+    font-family: "Equip-Light";
+  }
+
+  .totp-caption,
+  .errors.login-2sv {
+    display: none;
+    margin: .5rem 0 0;
+  }
+
+  .totp-caption {
+    color: var(--contentBackup);
+    font-size: var(--BODY_SMALL_LIGHT_FONT_SIZE);
+    font-weight: var(--BODY_SMALL_LIGHT_FONT_WEIGHT);
+    line-height: var(--BODY_SMALL_LIGHT_LINE_HEIGHT);
+  }
+
+  label[for="remember-me"] {
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    line-height: 1.5rem;
+    margin: 1rem 0 1.5rem;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  label[for="remember-me"]:hover .checkmark:not(.checked) {
+    background-color: var(--backgroundDeep);
+    box-shadow: var(--ELEVATION_TOP);
+    transition: all .2s ease-in-out;
+  }
+
+  input[name="remember-me"] {
+    cursor: pointer;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    width: 0;
+  }
+
+  input[name="remember-me"]:focus .checkmark {
+    box-shadow: 0 0 3px grey;
+  }
+
+
+  label[for="extended-session"] {
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    line-height: 1.5rem;
+    margin: 1rem 0 1.5rem;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  label[for="extended-session"] .content {
+    padding-left: .5rem;
+    font-family: 'Equip-Medium';
+    line-height: var(--BODY_NORMAL_REGULAR_LINE_HEIGHT);
+    font-size: var(--BODY_NORMAL_REGULAR_FONT_SIZE);
+  }
+
+  label[for="extended-session"]:hover .checkmark:not(.checked) {
+    background-color: var(--backgroundDeep);
+    box-shadow: var(--ELEVATION_TOP);
+    transition: all .2s ease-in-out;
+  }
+
+  input[name="extended-session"] {
+    cursor: pointer;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    width: 0;
+  }
+
+  input[name="extended-session"]:focus .checkmark {
+    box-shadow: 0 0 3px grey;
+  }
+
+  .extended-session-modal-toggle {
+    cursor: pointer;
+    display: inline-flex;
+  }
+
+  .modal-backdrop.extended-session .modal-description {
+    font-family: "Equip-Light";
+    font-size: var(--BODY_LARGE_LIGHT_FONT_SIZE);
+    font-weight: var(--BODY_LARGE_LIGHT_FONT_WEIGHT);
+    line-height: var(--BODY_LARGE_LIGHT_LINE_HEIGHT);
+  }
+
+  .modal-backdrop.extended-session .modal-description .strong {
+    font-family: 'Equip-Medium';
+    line-height: var(--BODY_LARGE_REGULAR_LINE_HEIGHT);
+    font-weight: var(--BODY_LARGE_REGULAR_FONT_WEIGHT);
+    font-size: var(--BODY_LARGE_REGULAR_FONT_SIZE);
+  }
+
+  .modal-backdrop.extended-session .list-title {
+    font-family: 'Equip-Medium';
+    line-height: var(--BODY_LARGE_REGULAR_LINE_HEIGHT);
+    font-weight: var(--BODY_LARGE_REGULAR_FONT_WEIGHT);
+    font-size: var(--BODY_LARGE_REGULAR_FONT_SIZE);
+  }
+
+  .modal-backdrop.extended-session .list-icon {
+    padding-left: .25em;
+    font-size: var(--BODY_SMALL_LIGHT_FONT_SIZE);
+    font-weight: var(--BODY_SMALL_LIGHT_FONT_WEIGHT);
+    line-height: var(--BODY_SMALL_LIGHT_LINE_HEIGHT);
+  }
+
+  .checkmark {
+    border: 1px solid var(--tertiaryBorderDeep);
+    border-radius: var(--ROUNDED_FULL_SMALL);
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    height: 1.5rem;
+    position: relative;
+    width: 1.5rem;
+  }
+
+  .checkmark::after {
+    border: 1px solid var(--contentInverted);
+    border-width: 0 2px 2px 0;
+    content: "";
+    left: calc(1.5rem / 3);
+    height: calc((1.5rem / 2) - 2px);
+    opacity: 0;
+    position: absolute;
+    top: calc(1.5rem / 8);
+    transform: rotate(45deg);
+    transition: all .2s ease-in-out;
+    width: calc(1.5rem / 5);
+  }
+
+  .checkmark.checked {
+    background-color: var(--primaryBase);
+    border-color: var(--primaryBase);
+  }
+
+  .checkmark.disabled {
+    border-color: var(--tertiaryBorder);
+  }
+
+  .checkmark.checked::after {
+    opacity: 1;
+  }
+
+  .content {
+    padding-left: .75rem;
+    font-family: "Equip-Light";
+    font-size: var(--BODY_SMALL_REGULAR_FONT_SIZE);
+    line-height: var(--BODY_SMALL_REGULAR_LINE_HEIGHT);
+  }
+
+  .remember-me-modal-toggle {
+    cursor: pointer;
+    display: inline-flex;
+  }
+
+  .resend-code-link {
+    margin-top: 1.5rem;
+  }
+
+  .resend-code-link,
+  .another-method-link,
+  .generate-alternate-code {
+    clear: both;
+    color: var(--primaryHover);
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    font-family: "Equip-Regular";
+    font-size: var(--BODY_LARGE_REGULAR_FONT_SIZE);
+    line-height: var(--BODY_LARGE_REGULAR_LINE_HEIGHT);
+    font-weight: var(--BODY_LARGE_REGULAR_FONT_WEIGHT);
+    margin-bottom: 1rem;
+    text-decoration: underline;
+  }
+  
+  .generate-alternate-code {
+    margin-top: 1.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .resend-code-link:not([style*="display: none"]) + .generate-alternate-code {
+    margin-top: 0;
+  }
+
+  .resend-code-link.disabled {
+    color: var(--contentBackup);
+    cursor: default;
+    font-family: "Equip-Regular";
+    font-size: var(--BODY_NORMAL_LIGHT_FONT_SIZE);
+    font-weight: var(--BODY_NORMAL_LIGHT_FONT_WEIGHT);
+    text-decoration: none;
+  }
+
+  .modal-body .list-title {
+    font-family: "Equip-Regular";
+    font-size: var(--BODY_LARGE_BOLD_FONT_SIZE);
+    font-weight: var(--BODY_LARGE_BOLD_FONT_WEIGHT);
+    line-height: var(--BODY_LARGE_BOLD_LINE_HEIGHT);
+    margin-bottom: 0;
+  }
+
+  .modal-body .list-bullet {
+    margin: .5rem 0;
+    word-break: break-word;
+  }
+
+  .modal-body .list-bullets {
+    margin: 1.5rem 0;
+  }
+  
+  .modal-body .list-icon,
+  .modal-body .list-text {
+    display: table-cell;
+  }
+
+  .modal-body .list-icon img {
+    vertical-align: bottom;
+  }
+
+  .modal-body .list-text {
+    padding-left: .5rem;
+  }

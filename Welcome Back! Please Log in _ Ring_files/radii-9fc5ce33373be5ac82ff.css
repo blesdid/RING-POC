@@ -1,0 +1,6 @@
+  :root {
+    --ROUNDED_FULL_SMALL: 4px;
+    --ROUNDED_FULL_MEDIUM: 8px;
+    --ROUNDED_TOP_SMALL: 4px 4px 0px 0px;
+    --ROUNDED_BOTTOM_SMALL: 0px 0px 4px 4px;
+  }

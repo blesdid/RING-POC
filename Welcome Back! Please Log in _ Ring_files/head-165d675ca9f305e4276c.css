@@ -1,0 +1,75 @@
+@font-face {
+    font-family: Equip-Light;
+    src: url(https://static.ring.com/fonts/30DF1A_0_0.eot);
+    src: url(https://static.ring.com/fonts/30DF1A_0_0.eot?#iefix) format("embedded-opentype"),
+    url(https://static.ring.com/fonts/30DF1A_0_0.woff2) format("woff2"),
+    url(https://static.ring.com/fonts/30DF1A_0_0.woff) format("woff"),
+    url(https://static.ring.com/fonts/30DF1A_0_0.ttf) format("truetype"),
+    url(https://static.ring.com/fonts/30DF1A_0_0.svg#wf) format("svg")
+}
+
+@font-face {
+    font-family: Equip-Regular;
+    src: url("https://static.ring.com/fonts/2BBA9E_0_0.eot") format("embedded-opentype"),
+    url("https://static.ring.com/fonts/2BBA9E_0_0.woff") format("woff"),
+    url("https://static.ring.com/fonts/2BBA9E_0_0.ttf") format("ttf");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Equip-Medium;
+    src: url(https://static.ring.com/fonts/2BA2B5_0_0.eot);
+    src: url(https://static.ring.com/fonts/2BA2B5_0_0.eot?#iefix) format("embedded-opentype"),
+    url(https://static.ring.com/fonts/2BA2B5_0_0.woff) format("woff"),
+    url(https://static.ring.com/fonts/2BA2B5_0_0.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: Equip-ExtraLight;
+    src: url("https://static.ring.com/fonts/EquipW03Extra_Light.woff") format("woff"),
+    url("https://static.ring.com/fonts/EquipW03Extra_Light.ttf") format("truetype"),
+    url("https://static.ring.com/fonts/EquipW03Extra_Light.svg") format("svg");
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+
+html {
+    font-size: 16px; /* 1rem = 16px */
+}
+
+body {
+    background: var(--surfaceBase);
+    color: var(--contentBase);
+    font-family: "Equip-Regular", Arial, Helvetica, Roboto, sans-serif;
+    font-size: .875rem;
+    font-weight: normal;
+    height: 100vh;
+    line-height: 1.125rem;
+    margin: 0;
+    user-select: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/**
+ * Some DOM elements require onBlur event to be fired.
+ * We add tabIndex={0} to those elements. This causes
+ * an outline to be shown then they get focus.
+ */
+*:focus {
+    outline: none;
+}
+
+/**
+ * There is no support for template tags in IE 11, we make the display none,
+ * so as the templates are not visible on the page.
+ */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    template {
+        display: none;
+    }
+}

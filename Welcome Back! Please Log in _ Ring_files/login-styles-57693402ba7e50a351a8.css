@@ -1,0 +1,76 @@
+body {
+  position: relative;
+}
+
+form {
+  width: 100%;
+}
+
+.subtitle.login {
+  margin-bottom: 1.25rem;
+}
+
+input[name="password"] {
+  /* For users with LastPass, this prevents the LastPass icon from overlapping with our toggle for password visibility */
+  background-position: 88% 50% !important;
+}
+
+.toggle-password-visibility {
+  bottom: .65rem;
+  cursor: pointer;
+  position: absolute;
+  right: .5rem;
+}
+
+.continue-button,
+.login-button {
+  margin-top: 1.5rem;
+}
+
+.forgot-password-link,
+.create-account-link {
+  color: var(--primaryHover);
+  font-family: "Equip-Regular";
+  font-size: var(--BODY_LARGE_REGULAR_FONT_SIZE);
+  line-height: var(--BODY_LARGE_REGULAR_LINE_HEIGHT);
+  font-weight: var(--BODY_LARGE_REGULAR_FONT_WEIGHT);
+}
+
+.legal-text {
+  margin-top: .5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-footer {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.forgot-password-link,
+.create-account-link {
+  margin-bottom: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+
+@media screen and (min-width: 600px) {
+  form {
+    width: auto;
+  }
+
+  .card.login-2sv {
+    height: 100%;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

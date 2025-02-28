@@ -1,0 +1,7 @@
+  :root {
+    --ELEVATION_RAISED: 0px 1px 2px rgba(0, 0, 0, 0.15);
+    --ELEVATION_TOP: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    --ELEVATION_BOTTOM: 0px -2px 8px rgba(0, 0, 0, 0.15);
+    --ELEVATION_POPOUT_NORMAL: 0px 8px 12px rgba(0, 0, 0, 0.15);
+    --ELEVATION_POPOUT_HIGH: 0px 24px 60px rgba(66, 66, 66, 0.4);
+  }

